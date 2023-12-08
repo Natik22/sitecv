@@ -20,12 +20,11 @@
 header {
     background: url(assets/img/bg.png)center/cover;
     min-height: 100vh;
-    display: block;
     scroll-snap-align: start;
 }
 
 #logo{
-    width: 10%;
+    width: 9%;
     margin-top: 1%;
     margin-left: 1%;
     float: left;
@@ -41,7 +40,7 @@ nav ul{
 nav ul li{
     margin-top: 2%;
     list-style: none;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-right: 10%;
     color: #e5e50b;
 }
@@ -67,6 +66,12 @@ h1 {
     font-size: 10em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #f6f614c9;
+    text-align: center;
+}
+h3 {
+    color: #f6f614c9;
+    font-size: 4em;
+    text-align: center;
 }
 
 #p1 {
@@ -75,6 +80,9 @@ h1 {
     padding: 10%;    
 }
 
+/* #p1:hover{
+  color: #238206;
+} */
 main {
     background:url(assets/img/page2.jpg)center/cover;
     height: 100vh;
@@ -103,6 +111,7 @@ main {
       } */
 
 footer{
+    display: block;
     scroll-snap-align: start;
     background:url(assets/img/page3.jpg)center/cover;
     height: 100vh;
@@ -195,11 +204,34 @@ form {
   button {
     /* Une marge supplémentaire représentant approximativement
        le même espace qu'entre les libellés et les champs. */
-    margin-left: 11em;
+    margin-left: 8em;
     background-color: #f6f614c9;
     color: #000;
-    font-size: 16px;
-
-
+    border:2px solid #000;
+    font-size: 1.2rem;  
+    width: 25%;
+    height: 20%;
+    border:none;
+    border-radius:5px;
   }
-  
+  button:hover {
+  background-color: #e60505;
+  }
+
+  #icon {
+  display: block;
+  padding: 10%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  }
+
+  #icon1 {
+    font-size: 200%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
